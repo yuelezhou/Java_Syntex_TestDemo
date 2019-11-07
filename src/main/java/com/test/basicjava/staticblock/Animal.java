@@ -6,6 +6,7 @@ package com.test.basicjava.staticblock;
         private String Tag = getClass().getSuperclass().getSimpleName();
 
         public int a;
+        int b = 0;
 
         private static String staticTag = "Animal_STATIC";
         static {
@@ -16,5 +17,20 @@ package com.test.basicjava.staticblock;
             System.out.println(Tag + "的无参构造函数" + a);
         }
 
+        public String getTag() {
+            return Tag;
+        }
+
+        public int getA() {
+            return a;
+        }
+
+        public int getB() {
+            return b;
+        }
+
+        public static String getStaticTag() {
+            return staticTag;
+        }
     }
 

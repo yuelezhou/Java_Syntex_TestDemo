@@ -5,14 +5,16 @@ public class ThreadDemo implements Runnable{
 
     @Override
     public void run() {
-        while (threadFoo.i>0)
-        synchronized (threadFoo){
-            try{
-                System.out.println("当前的线程值为"+Thread.currentThread().getName());
-                threadFoo.foo();
+        while (threadFoo.i>0) {
+            synchronized (threadFoo) {
+                try {
+                    System.out.println("当前的线程值为" + Thread.currentThread().getName());
+                    threadFoo.foo();
+                    Thread.sleep(1000);
 
-            }catch (Exception e){
-                System.out.println("Exception");
+                } catch (Exception e) {
+                    System.out.println("Exception");
+                }
             }
         }
     }
@@ -21,15 +23,20 @@ public class ThreadDemo implements Runnable{
         ThreadDemo threadDemo = new ThreadDemo();
         Thread thread = new Thread(threadDemo);
         Thread thread2 = new Thread(threadDemo);
+        thread.setName("线程1");
+        thread2.setName("线程2");
 
         try {
             thread.start();
-            thread.sleep(1000);
             thread2.start();
-            thread2.sleep(500);
+           // thread.wait();
+            thread.join();
+
         }catch (Exception e){
-            System.out.println(e);
+
         }
+
+
     }
 }
 

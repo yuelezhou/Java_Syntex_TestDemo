@@ -27,6 +27,11 @@ package com.test.basicjava.staticblock;
             new Dog();
         }
 
+        public void main(){
+            System.out.println(super.getB());
+            System.out.println(super.b);
+        }
+
 
         /*Animal_STATIC的静态域初始化 —— 父类静态代码块
          DOG_STATIC的静态域初始化 —— 子类静态代码块

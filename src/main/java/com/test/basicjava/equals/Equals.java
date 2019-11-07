@@ -1,6 +1,8 @@
-package com.test.basicjava;
+package com.test.basicjava.equals;
 
-public class Equals {
+//import com.test.basicjava.innerclass.InnerClassDemo;
+
+public class Equals  {
      static String str = "abcdef";
 
 
@@ -15,7 +17,7 @@ public class Equals {
 
      }
     public static void main(String[] args) {
-
+       // InnerClassDemo innerClassDemo = new InnerClassDemo();
         String str2 = "abc"+"def";
         String str3 = new String(str);
         char[] str4 = {'a','b','c','d','e','f'};
