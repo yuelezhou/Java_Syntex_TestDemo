@@ -1,6 +1,7 @@
 package com.test.basicjava.innerclass;
 
 import javax.swing.*;
+// 内部类中的变量/方法，是否能操作外部类的变量和方法
 
 public class InnerClassDemo {
     private String name;

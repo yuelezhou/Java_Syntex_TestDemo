@@ -7,3 +7,8 @@ target/
 
 *.iml
 
+#vscode
+.vscode/
+.project
+.settings/
+.settings/org.eclipse.jdt.apt.core.prefs
