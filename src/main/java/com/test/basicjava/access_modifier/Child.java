@@ -1,6 +1,6 @@
 package com.test.basicjava.access_modifier;
 
-public class Child extends parent{
+public class Child extends Parent{
     private String nickname ="cba";
     int age = 5;
     protected int hight = 70;
