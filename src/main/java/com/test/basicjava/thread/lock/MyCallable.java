@@ -1,4 +1,4 @@
-package com.test.basicjava.thread;
+package com.test.basicjava.thread.lock;
 
 import java.util.ArrayList;
 import java.util.List;
